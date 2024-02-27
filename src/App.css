@@ -1,38 +1,125 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(247, 245, 245), rgb(233, 233, 152));
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-image {
+  max-width: 100%;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+.main {
+  display: flex;
+}
+
+.first {
+  flex: 0 0 30%;
+}
+
+.first .firstimg {
+  width: 100%;
+  height: 100%;
+}
+
+.second {
+  flex: 1;
+}
+
+.second img {
+  max-width: 100%;
+  height: auto;
+}
+p #national {
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+ul {
+  padding-right: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.para {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img3 {
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.items {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dash {
+  color: red;
+}
+.list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.full-line {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.center {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main > div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    font-size: 10px;
   }
 }
